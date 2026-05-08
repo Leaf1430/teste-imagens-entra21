@@ -1,0 +1,199 @@
+* { /*Reset global*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {  /*Estiliza o body*/
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #222323;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-size: 1.7rem;
+    line-height: 1.6;
+    color: rgb(255, 255, 255);
+}
+
+header { /*Estiliza o header*/
+    background-image: linear-gradient(to right bottom, #791cca, #b065f1);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px 35px;
+}
+
+#home {
+    text-align: center;
+}
+
+nav { /*Estiliza o nav*/
+    text-align: center;
+    gap: 4px;
+    margin-top: 20px;
+    
+}
+nav a { /*Estiliza o nav a*/
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: .2s;
+}
+
+nav a:hover {   /*Estiliza o nav a:hover*/
+    background: #ffffff26;
+}
+
+#perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#perfil img {
+    border-radius: 50%;
+    width: 25rem;
+    height: 25rem;
+    position: absolute;
+}
+
+#paicontato{
+    margin-top: 300px;
+}
+
+.contatos {
+    font-size: 3rem;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: .2s;
+}
+.hero {
+  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+              url('img/Fundo.jpg');
+  height: 50vh;
+  border-radius: 20px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+}
+
+main {  /*Estiliza o main*/
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;   
+}
+
+img {
+    object-fit: cover;
+    padding: 20px;
+    height: 500px;
+    width: 600px;
+    border-radius: 30px;
+    transform: scale(1.06);
+   
+    transition: transform .3s, opacity .3s;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 3fr));
+  gap: 24px;
+}
+.galeria figure {
+  overflow: hidden;
+  border-radius: 10px;
+  border: 3px solid #791cca;
+}
+.galeria figure img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  transition: transform .3s, opacity .3s;
+}
+.galeria figure:hover img {
+  transform: scale(1.);
+  opacity: .82;
+}
+
+#sobrefernando {
+    padding: 20px;
+}
+
+section{    /*Estiliza as sections*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {    /*Estiliza o h1*/
+    font-size: 5rem;
+    margin-top: 20px;
+}
+
+
+h2 {    /*Estiliza o h2*/
+    text-align: center;
+    background-image: linear-gradient(to right bottom, #791cca, #b065f1);
+    padding: 20px;
+    border-radius: 50px;
+    margin: 40px 150px 0;
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+li {    /*Estiliza o li*/
+    color: white;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+#ferramentas {    /*Estiliza o li*/
+    border-radius: 20px;
+    color: white;
+    font-size: 2rem;
+}
+
+ul {    /*Estiliza o ul*/
+    color: white;
+    font-size: 1.6rem;
+    list-style: none;
+    padding: 10px 10px;
+}
+
+ol {    /*Estiliza o ol*/
+    color: white;
+    font-size: 1.6rem;
+    list-style: none;
+    padding: 10px 10px;
+}
+
+
+footer {    /*Estiliza o footer*/
+    background-image: linear-gradient(to top right , #7c12d8, #b065f1);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: white;
+    text-align: center;
+    padding: 24px 20px;
+    font-size: 1.6rem;
+}
+
